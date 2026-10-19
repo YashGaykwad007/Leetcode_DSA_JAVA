@@ -8,7 +8,7 @@ class MyQueue {
     public void push(int x) { // for the addition
     s1.push(x);
     }
-    public int pop() {
+    public int pop() { // its for the deletion
         if(s2.empty()){
             while(!s1.empty()){
                 s2.push(s1.pop());
@@ -16,7 +16,7 @@ class MyQueue {
         }
         return s2.pop();
     }
-    public int peek() {
+    public int peek() { // for seeing the value wtihout deleting 
         if(s2.empty()){
             while(!s1.empty()){
                 s2.push(s1.pop());
@@ -24,7 +24,7 @@ class MyQueue {
         }
         return s2.peek();
     }
-    public boolean empty() {
+    public boolean empty() { // check wheather the stack is empty which relut in the queue empty condition
         return s1.empty() && s2.empty();
     }
 }
