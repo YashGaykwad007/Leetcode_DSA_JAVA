@@ -12,7 +12,7 @@ class Solution {
             Nodelete = Math.max(v1,v2);
             // for the one delete 
             int v3;
-            if(preOneDelete == Integer.MIN_VALUE){
+            if(preOneDelete == 0){
                 v3 = arr[i];
             }
             else{
