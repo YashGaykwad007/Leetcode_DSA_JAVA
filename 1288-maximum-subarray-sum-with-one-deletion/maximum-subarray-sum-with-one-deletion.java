@@ -1,7 +1,7 @@
 class Solution {
     public int maximumSum(int[] arr) {
         int Nodelete = arr[0];// this will be the value for which no element is deleted;
-        int Onedelete = 0;
+        int Onedelete = Integer.MIN_VALUE;
         // is we take aar[i] and delete the element itself than the array beacame empty;
         int res = arr[0];
         for(int i = 1;i<arr.length;i++){
