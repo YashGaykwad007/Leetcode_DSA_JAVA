@@ -11,14 +11,8 @@ class Solution {
             int v2 = arr[i];
             Nodelete = Math.max(v1,v2);
             // for the one delete 
-            int v3;
-            if(preOneDelete == 0){
-                v3 = arr[i];
-            }
-            else{
-                v3 = preOneDelete+arr[i];
-            }
-           int v4 = preNoDelete;
+            int v3 = preOneDelete + arr[i];// at this step already one element is delted so we have to add the arr[i]
+            int v4 = preNoDelete;// arr[i] ko hi delete kr diya hai 
            Onedelete = Math.max(v3,v4);
            res = Math.max(res,Math.max(Onedelete,Nodelete));
         }
