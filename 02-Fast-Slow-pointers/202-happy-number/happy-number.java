@@ -1,5 +1,5 @@
 class Solution {
-    int fun(int n ){
+    int fun(int n ){ // made a fun method to square the individualy square of the digit 
        int  sum = 0;
         while(n!=0){
             int d = n%10;
