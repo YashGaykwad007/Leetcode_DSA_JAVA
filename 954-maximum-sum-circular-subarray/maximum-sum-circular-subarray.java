@@ -19,7 +19,7 @@ class Solution {
         if(res<0){
             return res;//if all the element are neagtive than the total - minsubbarray return 0
         }
-        res = Math.max(res,total-minsum);
+        res = Math.max(res,total-minsum);// final res update
         return res;
     }
 }
